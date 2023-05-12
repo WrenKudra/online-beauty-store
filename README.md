@@ -25,6 +25,9 @@ Download all the files and open index.html in your preferred browser.
 To use this website, simply click on the navigation links at the top right side of the page and you will be able to jump to navigate through the website. See figure 1 below.
 
 ![Screenshot of website](onlineStoreScreenshot.png)
+
+### Deployed app
+Deployed the app with vercel. Check the link here: online-beauty-store.vercel.app
  
 ### Credits
 
