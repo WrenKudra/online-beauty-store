@@ -27,8 +27,7 @@ To use this website, simply click on the navigation links at the top right side 
 ![Screenshot of website](onlineStoreScreenshot.png)
 
 ### Deployed app
-Deployed the app with vercel. Check the link here: online-beauty-store.vercel.app
- 
+Deployed the app with vercel. Check the link here: https://online-beauty-store.vercel.app/
 ### Credits
 
 This website was created by Tracey Turner during the HyperionDev Full Stack Web Development Bootcamp January 2023 [GitHub profile](https://github.com/WrenKudra). 
