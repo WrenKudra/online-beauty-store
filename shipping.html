@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Use external Bootstrap stylesheet-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <!-- Use external css stylesheet-->
+    <link href="styles/styles.css" rel="stylesheet" type="text/css">
+    <!--Include jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"> </script>
+    <!-- Use script.js external Javascript file -->
+    <script src="scripts/script.js"></script>
+    <title>Shipping Options - Elula Naturals</title>
+</head>
+
+<body>
+    <!-- Header background container (includes header and navigation) -->
+    <div class="header-backgrnd">
+
+        <!-- Header text -->
+        <div id="top" class="header row align-items-center">
+            <div class="col-4 header-text">
+                Elula Naturals
+            </div>
+
+            <!-- Navigation links in header -->
+            <nav class="col-5 navigation">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li class="spacer">|</li>
+                    <li><a href="about.html">About</a></li>
+                    <li class="spacer">|</li>
+                    <li class="productMenu"><a href="catalogue.html">Products</a></li>
+                    <li class="spacer">|</li>
+                    <li><a href="shoppingCart.html">Shopping Cart</a></li>
+                    <li class="spacer">|</li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+
+            <!-- Shopping cart icon on right side of header -->
+            <div class="col-1 cartIconDiv">
+                <a href="shoppingCart.html" class="cartIconLink">
+                    <img class="cart-img" src="images/cart.png" alt="shopping cart">
+                </a>
+                <div class="cart-text">0</div>
+            </div>
+
+            <!-- Header container ends here -->
+        </div>
+
+        <!-- Header background container ends here -->
+    </div>
+
+    <!-- Main content container begins -->
+    <div class="container">
+
+        <!-- Heading -->
+        <div class="col">
+            <h1>Delivery Options</h1>
+            <p>Kindly choose your delivery options below.</p>
+        </div>
+
+        <!-- Shipping details form div. Form styled with Bootstrap: https://getbootstrap.com/docs/4.0/components/forms/-->
+        <div class="row justify-content-center">
+
+            <form id="shipping" class="border border-secondary shadow p-5 bg-white">
+                <div class="row">
+                    <p><b>Please fill in your information:</b></p>
+                </div>
+                <div class="row">
+                    <div class="form-group col p-0">
+                        <label for="person-name">Your name</label>
+                        <input type="text" class="form-control" id="person-name" placeholder="Enter name">
+                    </div>
+                    <div class="form-group col">
+                        <label for="person-surname">Your surname</label>
+                        <input type="text" class="form-control" id="person-surname" placeholder="Enter surname">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="person-email">Your email address</label>
+                    <input type="email" class="form-control" id="person-email" aria-describedby="emailPromise"
+                        placeholder="Enter email address">
+                    <small id="emailPromise" class="form-text text-muted">We'll never share your email address with
+                        anyone else.
+                    </small>
+                </div>
+                <div class="form-group row">
+                    <label for="collect-or-deliver">Collection or delivery:</label>
+
+                    <select class="form-control" id="collect-or-deliver">
+                        <option value="100">Deliver my order</option>
+                        <option value="0">Collect</option>
+                    </select>
+                    <small id="costOfOptions" class="form-text text-muted">Delivery (R100), Collection (free)</small>
+                </div>
+
+                <div class="row">
+                    <label class="form-check-label">Choose your location:</label>
+                </div>
+
+                <div class="form-group row">
+                    <div id="location-radio-section" class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="location-radio" id="inline-radio1"
+                            value="option1" checked>
+                        <label class="form-check-label" for="inline-radio1">Durban</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="location-radio" id="inline-radio2"
+                            value="option2">
+                        <label class="form-check-label" for="inline-radio2">Cape Town</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="location-radio" id="inline-radio3"
+                            value="option3">
+                        <label class="form-check-label" for="inline-radio3">Johannesburg</label>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <label class="form-check-label">Use discount coupon/s to SAVE?:</label>
+                </div>
+
+                <div class="form-group">
+                    <div class="form-check form-check">
+                        <input class="form-check-input" type="radio" name="coupon-radio" id="coupon-radio1" value="0"
+                            checked>
+                        <label class="form-check-label" for="coupon-radio1">No coupon</label>
+                    </div>
+                    <div class="form-check form-check">
+                        <input class="form-check-input" type="radio" name="coupon-radio" id="coupon-radio2" value="50">
+                        <label class="form-check-label" for="coupon-radio2">Takealot Voucher - R50</label>
+                    </div>
+                    <div class="form-check form-check">
+                        <input class="form-check-input" type="radio" name="coupon-radio" id="coupon-radio3" value="100">
+                        <label class="form-check-label" for="coupon-radio3">Takealot Voucher - R100</label>
+                    </div>
+                    <div class="form-check form-check">
+                        <input class="form-check-input" type="radio" name="coupon-radio" id="coupon-radio4" value="150">
+                        <label class="form-check-label" for="coupon-radio4">Discovery coupon - R150</label>
+                    </div>
+                    <div class="form-check form-check">
+                        <input class="form-check-input" type="radio" name="coupon-radio" id="coupon-radio5" value="25">
+                        <label class="form-check-label" for="coupon-radio5">Momentum Health coupon - R25</label>
+                    </div>
+                </div>
+
+                <div class="form-group row" style="padding-top: 10px;">
+                    <label for="contact-text-area">Any details our delivery man should know:</label>
+                    <textarea class="form-control" id="contact-text-area" rows="3"
+                        placeholder="e.g. Yellow gate on left, beware of dog, ask for Susan... "></textarea>
+                </div>
+
+                <div class="form-group row">
+                    <!-- This button calls "addDeliveryInfo()" function to add the cost of delivery and subtract coupon amounts from the current subtotal, to calculate final total. This total is then used in the shopping cart summary section. -->
+                    <button type="reset" class="btn btn-primary shippingButton">Submit</button>
+                </div>
+            </form>
+
+            <!-- Shipping details form div ends here -->
+        </div>
+
+        <!-- Main container ends-->
+    </div>
+
+     <!-- Drop-down menu in the 'Products' link in the header, using jQuery -->
+     <div class="hiddenDiv">
+        <div class="hiddenLinks">
+          <div><a href="sprayMist.html">Spray mist</a></div>
+          <div><a href="bathScrub.html">Bath scrub</a></div>
+          <div><a href="bodyButter.html">Body butter</a></div>
+          <div><a href="bodyWash.html">Body wash</a></div>
+          <div><a href="bodyLotion.html">Body Lotion</a></div>
+        </div>
+      </div>
+
+    <!-- Footer for page -->
+    <div class="footer-container">
+        <footer>
+            <p>© Copyright Tracey's Beauty Store 2023</p>
+        </footer>
+    </div>
+</body>
+
+</html>
